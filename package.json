@@ -1,0 +1,10 @@
+{
+  "name": "pk-user-town-clean-agents",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check lib/agent-core.js && node --check api/[...path].js && node --check public/app.js"
+  },
+  "description": "Clean Vercel package for Pakistan mobile interview agents."
+}

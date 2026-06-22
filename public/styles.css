@@ -1,0 +1,159 @@
+:root {
+  color-scheme: light;
+  --ink: #16201d;
+  --muted: #66716d;
+  --line: #d9dfdc;
+  --panel: #ffffff;
+  --soft: #f4f7f5;
+  --accent: #137a63;
+  --accent-strong: #0d5f4d;
+  --danger: #a73832;
+  --shadow: 0 16px 45px rgba(28, 42, 37, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #edf2ef;
+  color: var(--ink);
+  font-family: Inter, "Microsoft YaHei", "PingFang SC", "Segoe UI", system-ui, sans-serif;
+}
+
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+.app-shell { min-height: 100vh; padding: 22px; }
+
+.topbar, .workspace {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+h1 { margin-bottom: 0; font-size: clamp(28px, 4vw, 44px); }
+
+.eyebrow {
+  margin-bottom: 6px;
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(420px, 1.25fr) minmax(300px, 0.75fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.panel {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.section-head, .chat-controls, .button-row, .segmented, .answer-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-head { justify-content: space-between; margin-bottom: 16px; }
+.chat-controls { flex-wrap: wrap; align-items: end; }
+.chat-controls .field { flex: 1 1 180px; min-width: 180px; }
+
+.field { display: grid; gap: 6px; width: 100%; }
+.field span { color: var(--muted); font-size: 13px; font-weight: 700; }
+
+select, textarea, input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 10px 12px;
+}
+
+input[type="range"] { padding: 0; accent-color: var(--accent); }
+textarea { min-height: 140px; resize: vertical; }
+.question-field { margin: 14px 0; }
+
+.primary-button, .ghost-button, .icon-button, .segment, .status-pill {
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 0 12px;
+}
+
+.primary-button { border-color: var(--accent); background: var(--accent); color: #fff; font-weight: 800; }
+.segment.active { border-color: var(--accent); background: #e8f6f1; color: var(--accent-strong); font-weight: 800; }
+.icon-button { width: 38px; padding: 0; }
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.status-pill.ready { border-color: rgba(19, 122, 99, 0.35); color: var(--accent-strong); background: #e8f6f1; }
+.status-pill.warn { color: #9b5b19; background: #fff5e7; }
+
+.answer-area, .agent-list { display: grid; gap: 12px; }
+.agent-list { max-height: 760px; overflow: auto; padding-right: 2px; }
+
+.answer-card, .agent-card, .empty-state, .error-state {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  padding: 14px;
+}
+
+.empty-state { border-style: dashed; color: var(--muted); background: #fbfcfb; }
+.error-state { border-color: rgba(167, 56, 50, 0.35); color: var(--danger); background: #fff0ef; }
+
+.answer-card p, .agent-card p { color: var(--muted); line-height: 1.7; }
+.answer-meta { flex-wrap: wrap; margin: 10px 0; }
+.answer-meta span { border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; color: var(--muted); font-size: 12px; }
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.evidence-box { margin-top: 12px; color: var(--muted); }
+.evidence-box summary { cursor: pointer; color: var(--accent-strong); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .app-shell { padding: 12px; }
+  .topbar, .workspace, .section-head { display: grid; grid-template-columns: 1fr; }
+}

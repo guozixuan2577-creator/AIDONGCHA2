@@ -1,0 +1,61 @@
+{
+  "agent_count": 8,
+  "agents": [
+    {
+      "agent_id": "ahmad_samsung_a17",
+      "display_name": "Ahmad\nSamsung A17",
+      "current_phone_raw": "Samsung A17",
+      "nonempty_evidence_count": 21,
+      "module_count": 4
+    },
+    {
+      "agent_id": "ahmad_butt_hot_60_pro",
+      "display_name": "Ahmad Butt\nHOT 60 Pro",
+      "current_phone_raw": "HOT 60 Pro",
+      "nonempty_evidence_count": 23,
+      "module_count": 4
+    },
+    {
+      "agent_id": "bushra_hot_60_pro",
+      "display_name": "Bushra \nHot 60 Pro",
+      "current_phone_raw": "Hot 60 Pro",
+      "nonempty_evidence_count": 24,
+      "module_count": 4
+    },
+    {
+      "agent_id": "sheroz_samsung_glaxy_a17",
+      "display_name": "Sheroz\nSamsung Glaxy A17",
+      "current_phone_raw": "Samsung Glaxy A17",
+      "nonempty_evidence_count": 30,
+      "module_count": 3
+    },
+    {
+      "agent_id": "usman_bin_mateen_infnix_hot_60_pro",
+      "display_name": "Usman Bin Mateen \nInfnix Hot 60 pro",
+      "current_phone_raw": "Hot 60 pro",
+      "nonempty_evidence_count": 20,
+      "module_count": 3
+    },
+    {
+      "agent_id": "uzair_hot_60_pro",
+      "display_name": "Uzair\nHot 60 Pro",
+      "current_phone_raw": "Hot 60 Pro",
+      "nonempty_evidence_count": 24,
+      "module_count": 4
+    },
+    {
+      "agent_id": "zaeem_mujahid_glaxy_a16",
+      "display_name": "Zaeem Mujahid\nGlaxy A16",
+      "current_phone_raw": "Glaxy A16",
+      "nonempty_evidence_count": 19,
+      "module_count": 3
+    },
+    {
+      "agent_id": "zain_ul_abideen_vivo_v60_lite",
+      "display_name": "Zain Ul Abideen\nVivo V60 LITE",
+      "current_phone_raw": "Vivo V60 LITE",
+      "nonempty_evidence_count": 22,
+      "module_count": 4
+    }
+  ]
+}
